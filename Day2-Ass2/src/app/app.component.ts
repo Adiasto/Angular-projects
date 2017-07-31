@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Welcome to angular-2 app!';
     values="";
     email="";
+    texty="";
     names=['aditya','akash','suyog','swati','vaishali'];
     TypedIn(event:any)
         {
@@ -18,6 +19,10 @@ export class AppComponent {
         {
 
         }
+    setText(textHere)
+    {
+        this.texty=textHere;
+    }
     getColor()
         {
         if(this.email.length%2==0){
