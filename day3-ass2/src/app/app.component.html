@@ -1,0 +1,5 @@
+<ul *ngFor="let person of names; let i=index">
+  <li>
+    <p [ngStyle]="{'color': i%2==0?'red':'blue'}">{{person}}</p>
+  </li>
+</ul>

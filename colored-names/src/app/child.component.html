@@ -1,0 +1,8 @@
+<h2>hello</h2>
+<ul *ngFor="let person of names; let i=index">
+    <li>
+        <p [ngStyle]="{'color': i%2==0?'red':'blue'}">{{person}}</p>
+    </li>
+</ul>
+<button (click)="toggle()">show/hide</button>
+<p [ngStyle]="{'visibility':getVisibility()}">This text will disappear on button click</p>

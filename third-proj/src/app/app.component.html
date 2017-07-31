@@ -1,0 +1,11 @@
+<div>
+    <p><b>UserName:</b></p>
+    <input type="text" />
+    {{mymodel}}
+    <p><b>Email:</b></p>
+    <input type="email" [(ngModel)]="email" />
+    <p [ngStyle]="{'color':getColor()}">{{email}}</p>
+    <ul>
+    </ul>
+
+</div>
